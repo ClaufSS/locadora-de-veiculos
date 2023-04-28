@@ -1,5 +1,6 @@
 -- SQLite
 
+
 -- Populando tabela CUSTOMERS
 INSERT INTO CUSTOMERS (NAME, LASTNAME, PHONE, EMAIL, ADDRESS, CITY, STATE, BIRTH_DATE)
   VALUES ('Roberto', 'Silva', '(11) 964', 'roberto@gmail.com', 'Rua José, 32', 'São Roque', 'SP', '1987-04-25'),
@@ -12,6 +13,24 @@ INSERT INTO CUSTOMERS (NAME, LASTNAME, PHONE, EMAIL, ADDRESS, CITY, STATE, BIRTH
          ('Dalva', 'Malheiros', '(11) 966', 'dalva@gmail.com', 'Rua das Nogueiras, 12', 'São Paulo', 'SP', '1956-08-03'),
          ('Carolina', 'Medeiros', '(11) 935', 'carol@ig.com.br', 'Rua dos Jatobás, 1', 'Cajamar', 'SP', '1974-08-21'),
          ('Marcos', 'Rodrigues', '(11) 972', 'marcos@uol.com.br', 'Rua das Amazonas, 89', 'Recife', 'PE', '1966-05-25');
+
+
+-- Atualizando os números para algo mais realista
+/*
+UPDATE CUSTOMERS
+  SET PHONE = CASE
+                WHEN PHONE = '(11) 964' THEN '(11) 964971549'
+                WHEN PHONE = '(11) 974' THEN '(11) 974110829'
+                WHEN PHONE = '(11) 974' THEN '(11) 974511082'
+                WHEN PHONE = '(11) 973' THEN '(11) 973974511'
+                WHEN PHONE = '(11) 975' THEN '(11) 975000013'
+                WHEN PHONE = '(11) 974' THEN '(11) 974254900'
+                WHEN PHONE = '(11) 987' THEN '(11) 987351598'
+                WHEN PHONE = '(11) 966' THEN '(11) 966670014'
+                WHEN PHONE = '(11) 935' THEN '(11) 935716010'
+                WHEN PHONE = '(11) 972' THEN '(11) 972000893'
+              END;
+*/
 
 
 -- Exibindo tabela CUSTOMERS
