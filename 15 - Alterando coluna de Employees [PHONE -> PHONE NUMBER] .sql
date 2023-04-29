@@ -1,0 +1,5 @@
+
+-- Alterando estrutura da tabela EMPLOYEES
+
+  -- column 'PHONE' to 'PHONE NUMBER'
+ALTER TABLE EMPLOYEES RENAME COLUMN PHONE TO 'PHONE NUMBER';
